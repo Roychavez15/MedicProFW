@@ -147,7 +147,10 @@ namespace MedicProFW.Win
             frmListaPacientes childForm = new frmListaPacientes();
             childForm.MdiParent = this;
             childForm.Text = "Lista Pacientes";
+
             childForm.Show();
+            childForm.Top = 0;
+            childForm.Left = 0;
         }
 
         private void mnuPacienteNuevo_Click(object sender, EventArgs e)
@@ -156,6 +159,8 @@ namespace MedicProFW.Win
             childForm.MdiParent = this;
             childForm.Text = "Crear Pacientes";
             childForm.Show();
+            childForm.Top = 0;
+            childForm.Left = 0;
         }
 
         private void crearEditarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -164,6 +169,8 @@ namespace MedicProFW.Win
             childForm.MdiParent = this;
             childForm.Text = "Crear-Editar Planillas";
             childForm.Show();
+            childForm.Top = 0;
+            childForm.Left = 0;
         }
 
         private void menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -177,6 +184,8 @@ namespace MedicProFW.Win
             childForm.MdiParent = this;
             childForm.Text = "Dependencias";
             childForm.Show();
+            childForm.Top = 0;
+            childForm.Left = 0;
         }
 
         private void enfermedadesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -185,6 +194,8 @@ namespace MedicProFW.Win
             childForm.MdiParent = this;
             childForm.Text = "Diagnosticos";
             childForm.Show();
+            childForm.Top = 0;
+            childForm.Left = 0;
         }
 
         private void serviciosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -193,6 +204,8 @@ namespace MedicProFW.Win
             childForm.MdiParent = this;
             childForm.Text = "Servicios";
             childForm.Show();
+            childForm.Top = 0;
+            childForm.Left = 0;
         }
 
         private void segurosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -201,6 +214,8 @@ namespace MedicProFW.Win
             childForm.MdiParent = this;
             childForm.Text = "Seguros";
             childForm.Show();
+            childForm.Top = 0;
+            childForm.Left = 0;
         }
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
@@ -209,6 +224,8 @@ namespace MedicProFW.Win
             childForm.MdiParent = this;
             childForm.Text = "Tarifario";
             childForm.Show();
+            childForm.Top = 0;
+            childForm.Left = 0;
         }
 
         private void listarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -217,6 +234,8 @@ namespace MedicProFW.Win
             childForm.MdiParent = this;
             childForm.Text = "Planillas";
             childForm.Show();
+            childForm.Top = 0;
+            childForm.Left = 0;
         }
 
         private void planillasToolStripMenuItem_Click(object sender, EventArgs e)
@@ -225,6 +244,8 @@ namespace MedicProFW.Win
             childForm.MdiParent = this;
             childForm.Text = "Reporte Planillas";
             childForm.Show();
+            childForm.Top = 0;
+            childForm.Left = 0;
         }
 
         private void habitacionesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -233,6 +254,8 @@ namespace MedicProFW.Win
             childForm.MdiParent = this;
             childForm.Text = "Habitaciones";
             childForm.Show();
+            childForm.Top = 0;
+            childForm.Left = 0;
         }
 
         private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -241,6 +264,8 @@ namespace MedicProFW.Win
             childForm.MdiParent = this;
             childForm.Text = "Usuarios";
             childForm.Show();
+            childForm.Top = 0;
+            childForm.Left = 0;
         }
 
         private void medicosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -249,6 +274,8 @@ namespace MedicProFW.Win
             childForm.MdiParent = this;
             childForm.Text = "Medicos";
             childForm.Show();
+            childForm.Top = 0;
+            childForm.Left = 0;
         }
 
         private void archivoPlanoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -257,6 +284,14 @@ namespace MedicProFW.Win
             childForm.MdiParent = this;
             childForm.Text = "Archivo Plano";
             childForm.Show();
+            childForm.Top = 0;
+            childForm.Left = 0;
+        }
+
+        private void frmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
+            Application.Exit();
         }
     }
 }
